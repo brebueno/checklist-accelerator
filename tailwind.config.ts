@@ -63,12 +63,12 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Cores personalizadas para o Checklist 100K
+				// Cores personalizadas para o Checklist 100K - atualizadas para tons mais escuros
 				vello: {
-					blue: '#003366',
-					orange: '#FF6F00',
-					green: '#4CAF50',
-					gray: '#F5F5F5',
+					blue: '#00264D', // Azul mais escuro
+					orange: '#E05600', // Laranja mais escuro
+					green: '#3C8D40', // Verde mais escuro para manter contraste
+					gray: '#F0F0F0', // Cinza um pouco mais escuro
 					white: '#FFFFFF'
 				}
 			},
