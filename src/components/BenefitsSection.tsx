@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { CheckCircle, Clock, CloudSync, Gift } from 'lucide-react';
+import { CheckCircle, Clock, Cloud, Gift } from 'lucide-react';
 
 const BenefitsSection: React.FC = () => {
   const benefits = [
@@ -15,7 +15,7 @@ const BenefitsSection: React.FC = () => {
       description: "com Atualizações Automáticas"
     },
     {
-      icon: <CloudSync className="benefitIcon" />,
+      icon: <Cloud className="benefitIcon" />,
       title: "Funciona Offline",
       description: "e Sincroniza na Nuvem"
     },
