@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const HeroSection: React.FC = () => {
   return (
@@ -14,10 +15,10 @@ const HeroSection: React.FC = () => {
             <p className="text-xl opacity-90 mb-6">
               A mesma metodologia usada por marcas como Mio Capelli e Foot's para escalar vendas.
             </p>
-            <button className="ctaButton flex items-center gap-2 text-lg">
+            <Link to="/checklist" className="ctaButton flex items-center gap-2 text-lg">
               Quero Acessar o Checklist Agora
               <ArrowRight size={20} />
-            </button>
+            </Link>
             <p className="mt-3 text-sm opacity-80">
               100% gratuito para clientes da Vello.
             </p>

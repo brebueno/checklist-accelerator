@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const CTAFloating: React.FC = () => {
   return (
@@ -10,10 +11,10 @@ const CTAFloating: React.FC = () => {
           <p className="font-semibold text-center md:text-left">
             Não perca tempo! Acesse o Checklist 100K e escale seu e-commerce agora.
           </p>
-          <button className="pulseCTA ctaButton flex items-center gap-2">
+          <Link to="/checklist" className="pulseCTA ctaButton flex items-center gap-2">
             Acessar o Checklist
             <ArrowRight size={20} />
-          </button>
+          </Link>
         </div>
       </div>
     </div>

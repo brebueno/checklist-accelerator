@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Check, ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const PreviewSection: React.FC = () => {
   const checklistItems = [
@@ -27,10 +28,10 @@ const PreviewSection: React.FC = () => {
         </div>
         
         <div className="text-center">
-          <button className="secondaryCTA flex items-center gap-2 mx-auto">
+          <Link to="/checklist" className="secondaryCTA flex items-center gap-2 mx-auto">
             Ver Todos os 116 Pontos
             <ArrowRight size={20} />
-          </button>
+          </Link>
         </div>
       </div>
     </section>
