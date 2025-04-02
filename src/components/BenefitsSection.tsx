@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { CheckCircle, Clock, Cloud, Gift, BarChart3 } from 'lucide-react';
+import { CheckCircle, Clock, Cloud, Gift, BarChart3, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import ROASCalculator from './ROASCalculator';
 
