@@ -63,13 +63,13 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Cores personalizadas para o Checklist 100K - atualizadas para tons mais escuros
+				// Cores atualizadas para o Checklist 100K - seguindo a nova identidade visual
 				vello: {
-					blue: '#00264D', // Azul mais escuro
-					orange: '#E05600', // Laranja mais escuro
-					green: '#3C8D40', // Verde mais escuro para manter contraste
-					gray: '#F0F0F0', // Cinza um pouco mais escuro
-					white: '#FFFFFF'
+					blue: '#0F0E27', // Azul escuro como na logo
+					orange: '#FF4D26', // Laranja vibrante como na logo
+					green: '#3C8D40', // Verde mantido
+					gray: '#F0F0F0', // Cinza mantido
+					white: '#FFFFFF'  // Branco mantido
 				}
 			},
 			borderRadius: {

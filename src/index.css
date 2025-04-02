@@ -96,7 +96,7 @@
   }
 }
 
-/* Custom Classes - updated with darker colors */
+/* Custom Classes - updated with new brand colors */
 .ctaButton {
   @apply bg-vello-orange text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:brightness-110;
 }
