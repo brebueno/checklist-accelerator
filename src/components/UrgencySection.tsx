@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import { Clock, Users } from 'lucide-react';
+import { Clock, Users, AlertTriangle } from 'lucide-react';
 
 const UrgencySection: React.FC = () => {
   const [timeLeft, setTimeLeft] = useState({
@@ -33,15 +33,27 @@ const UrgencySection: React.FC = () => {
   const formatNumber = (num: number) => num.toString().padStart(2, '0');
 
   return (
-    <section className="py-12 bg-vello-orange text-white">
+    <section className="py-8 bg-vello-orange text-white">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center justify-center gap-8">
           <div className="flex items-center gap-3">
-            <Clock size={32} />
+            <div className="bg-white/10 p-2 rounded-full">
+              <Clock size={28} />
+            </div>
             <div>
-              <p className="text-lg font-semibold">Oferta válida por mais:</p>
-              <div className="text-2xl md:text-3xl font-bold">
-                {formatNumber(timeLeft.hours)}h {formatNumber(timeLeft.minutes)}m {formatNumber(timeLeft.seconds)}s
+              <p className="text-lg font-semibold">Condições especiais por:</p>
+              <div className="flex gap-2 items-center">
+                <div className="bg-white/20 rounded-md px-2 py-1">
+                  <span className="text-2xl font-bold">{formatNumber(timeLeft.hours)}</span>
+                </div>
+                <span className="text-xl">:</span>
+                <div className="bg-white/20 rounded-md px-2 py-1">
+                  <span className="text-2xl font-bold">{formatNumber(timeLeft.minutes)}</span>
+                </div>
+                <span className="text-xl">:</span>
+                <div className="bg-white/20 rounded-md px-2 py-1">
+                  <span className="text-2xl font-bold">{formatNumber(timeLeft.seconds)}</span>
+                </div>
               </div>
             </div>
           </div>
@@ -49,10 +61,15 @@ const UrgencySection: React.FC = () => {
           <div className="h-12 border-r border-white/30 hidden md:block"></div>
           
           <div className="flex items-center gap-3">
-            <Users size={32} />
+            <div className="bg-white/10 p-2 rounded-full">
+              <Users size={28} />
+            </div>
             <div>
               <p className="text-lg font-semibold">Vagas limitadas:</p>
-              <p className="text-2xl md:text-3xl font-bold">Últimas 50 vagas com acesso à mentoria!</p>
+              <div className="flex items-center gap-2">
+                <AlertTriangle size={16} className="animate-pulse" />
+                <p className="text-xl font-bold">Últimas 50 vagas para a mentoria!</p>
+              </div>
             </div>
           </div>
         </div>

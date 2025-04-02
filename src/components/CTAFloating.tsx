@@ -9,11 +9,11 @@ const CTAFloating: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="font-semibold text-center md:text-left">
-            Não perca tempo! Acesse o Checklist 100K e escale seu e-commerce agora.
+            <span className="text-vello-orange">116 estratégias</span> para escalar seu e-commerce até 6 dígitos/mês
           </p>
-          <Link to="/checklist" className="pulseCTA ctaButton flex items-center gap-2">
+          <Link to="/checklist" className="pulseCTA ctaButton flex items-center gap-2 group">
             Acessar o Checklist
-            <ArrowRight size={20} />
+            <ArrowRight size={20} className="transition-transform group-hover:translate-x-1" />
           </Link>
         </div>
       </div>
