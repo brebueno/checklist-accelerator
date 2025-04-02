@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,14 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Cores personalizadas para o Checklist 100K
+				vello: {
+					blue: '#003366',
+					orange: '#FF6F00',
+					green: '#4CAF50',
+					gray: '#F5F5F5',
+					white: '#FFFFFF'
 				}
 			},
 			borderRadius: {
@@ -84,11 +93,25 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'pulse-button': {
+					'0%, 100%': {
+						opacity: '1',
+						transform: 'scale(1)'
+					},
+					'50%': {
+						opacity: '0.9',
+						transform: 'scale(1.05)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'pulse-button': 'pulse-button 2s infinite'
+			},
+			fontFamily: {
+				'poppins': ['Poppins', 'sans-serif']
 			}
 		}
 	},

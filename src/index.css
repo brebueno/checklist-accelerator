@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -35,19 +38,12 @@
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
@@ -96,6 +92,39 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-poppins;
   }
+}
+
+/* Custom Classes */
+.ctaButton {
+  @apply bg-vello-orange text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:bg-opacity-90;
+}
+
+.secondaryCTA {
+  @apply bg-vello-blue text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:bg-opacity-90;
+}
+
+.pulseCTA {
+  @apply animate-pulse-button;
+}
+
+.sectionTitle {
+  @apply text-3xl md:text-4xl font-bold text-vello-blue mb-8 text-center;
+}
+
+.card {
+  @apply bg-white rounded-xl shadow-lg p-6 transition-all duration-300 hover:shadow-xl;
+}
+
+.benefitIcon {
+  @apply text-vello-orange text-3xl mb-4;
+}
+
+.bullet {
+  @apply flex items-start gap-3 mb-4;
+}
+
+.checkbox {
+  @apply text-vello-green text-xl flex-shrink-0 mt-1;
 }
